@@ -52,3 +52,12 @@
 // let obj3 = {
   
 // }
+ 
+// To use of prototype you can make any function according to you 
+//    just like this 
+// Array.prototype.show = function(){
+//     return this
+// }
+
+// const array = ["nitesh"];
+// console.log(array.show());
