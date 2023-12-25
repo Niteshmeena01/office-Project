@@ -61,3 +61,65 @@
 
 // const array = ["nitesh"];
 // console.log(array.show());
+
+// learning async
+
+// let a = [
+//     {name:"nitesh",Profession:"softwareEngineer"},
+//     {name:"rahul",Profession:"softwareEngineer"}
+// ]
+
+
+// function getData() {
+//     setTimeout(()=>{
+//         a.forEach((data, index) => {
+//             return console.log(data.name);
+//           })
+//     },5000) 
+    
+    
+    
+    
+// }
+
+
+// function newData() {
+//     setTimeout(()=>{
+//         a.forEach((data, index) => {
+//             return console.log(data.name);
+//           })
+//     },3000) 
+        
+
+// }
+
+// let a = {name:"nitesh",age:"22"}
+// let b ={name:"harsh",age:"20"} 
+
+
+// function getData() {
+//     return a.name
+// }
+// function newData() {
+//     return b.name
+// }
+// let c =  new Promise((resolve,reject)=>{
+//          return  setTimeout(()=>{
+//          let error = true
+//             if (!error) {
+//                 resolve()
+//             } else {
+//                 reject()
+//             }
+//           },1000)
+// })
+// console.log(c.then(getData).catch(newData));
+
+function data() {
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.onreadystatechange == 200) {
+            
+        } 
+       }
+}
