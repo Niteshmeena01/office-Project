@@ -115,11 +115,53 @@
 // })
 // console.log(c.then(getData).catch(newData));
 
-function data() {
-       var xhttp = new XMLHttpRequest();
-       xhttp.onreadystatechange = function(){
-        if (this.readyState == 4 && this.onreadystatechange == 200) {
+// function data() {
+//        var xhttp = new XMLHttpRequest();
+//        xhttp.onreadystatechange = function(){
+//         if (this.readyState == 4 && this.onreadystatechange == 200) {
             
-        } 
-       }
-}
+//         } 
+//        }
+// }
+// Nested loop syntax 
+// you can use loop in loop are nested loop 
+// var array = [["Nitesh"],[18],["male"]]
+// var b = array.splice(-1,)
+// console.log(array);
+//  for( a = 0; a <= array.length; a++){
+//      for(b = a ; b <= 3;b++){
+//         console.log(array[b]);
+//      }
+//  }
+  
+// var a = {name:"nitesh",
+//          age :22,
+//         sex:"male"}
+// for (const obj in a) {
+//     console.log(obj+": " +a[obj]);
+//     }
+     
+// var array = ["nitesh","rahul","vignesh","bhlaal Dev"]
+// console.log(array.map(value));
+// function value(x) {
+//     return x + " meena"
+// }
+
+// var a = "hello guys i'm here typing"
+// split method use for make a new in string  
+// console.log(a.split(" "));
+// console.log(a.endsWith("typing"));
+
+// var element ;
+// element = document.body;
+// console.log(element);
+
+
+
+// let style = document.getElementById("Ratata")
+//     style.addEventListener("click",abc)
+//     function abc() {
+//         this.style.background="green"
+//         this.style.border="20px solid yellow "
+//     }
+
