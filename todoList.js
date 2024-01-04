@@ -8,10 +8,15 @@ button.addEventListener("click",(buttn)=>{
     let ul = document.createElement("ul")
      let task =list.appendChild(ul)
     if (buttn){
-        task.innerHTML = input.value +`<i class="fa-solid fa-trash" style="margin-left:40px;"></i> <br>`
+        task.innerHTML = input.value +`<i class="fa-solid fa-trash" style="margin-left:40px;"></i> `
         input.value = ""
-    }
+    } 
 })
+
+list.addEventListener("click",(task)=>{
+    console.log(task.target.ul.innerText);
+})
+
 
 
 
