@@ -77,14 +77,14 @@ const options = {
 
 
 
-const getApi = async ()=>{
-	const response = await fetch('https://jsonplaceholder.typicode.com/todos/1',options)
-	const res = await response.text()
-    const result = JSON.parse(res)
-    document.getElementById("txt").innerHTML=result.id
-    document.getElementById("one").innerHTML=result.userId
-    document.getElementById("new").innerHTML=result.title
-}
+// const getApi = async ()=>{
+// 	const response = await fetch('https://jsonplaceholder.typicode.com/todos/1',options)
+// 	const res = await response.text()
+//     const result = JSON.parse(res)
+//     document.getElementById("txt").innerHTML=result.id
+//     document.getElementById("one").innerHTML=result.userId
+//     document.getElementById("new").innerHTML=result.title
+// }
 
-getApi()
+// getApi()
 
