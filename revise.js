@@ -67,24 +67,74 @@
 // }
 
 
-const options = {
-	method: 'GET',
-	// headers: {
-	// 	'X-RapidAPI-Key': '262219d14emsh75b162d91a5e223p1ed8a4jsn3084febc219a',
-	// 	'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
-	// }
-};
+// const options = {
+// 	method: 'GET',
+// 	// headers: {
+// 	// 	'X-RapidAPI-Key': '262219d14emsh75b162d91a5e223p1ed8a4jsn3084febc219a',
+// 	// 	'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+// 	// }
+// };
 
 
 
-const getApi = async ()=>{
-	const response = await fetch('https://jsonplaceholder.typicode.com/todos/1',options)
-	const res = await response.text()
-    const result = JSON.parse(res)
-    document.getElementById("txt").innerHTML=result.id
-    document.getElementById("one").innerHTML=result.userId
-    document.getElementById("new").innerHTML=result.title
-}
+// const getApi = async ()=>{
+// 	const response = await fetch('https://jsonplaceholder.typicode.com/todos/1',options)
+// 	const res = await response.text()
+//     const result = JSON.parse(res)
+//     document.getElementById("txt").innerHTML=result.id
+//     document.getElementById("one").innerHTML=result.userId
+//     document.getElementById("new").innerHTML=result.title
+// }
 
-getApi()
+// getApi()
 
+// fetch("https://jsonplaceholder.typicode.com/posts").then((response)=>{
+//      return response.json()
+//      }).then((data)=>{
+	    
+// 	 for(var a in data){
+// 		console.log(data[a].title);
+// 	 }	
+
+
+//     }).catch((error)=>console.log("can't fetch data"))
+// document.getElementById('btn').addEventListener("click",(e)=>{
+//            e.preventDefault()
+
+// 		   let obj = {
+// 			title:document.getElementById('name').value,
+// 			body:document.getElementById('age').value,
+// 			userId:document.getElementById('Number').value,
+// 		  }
+// 		fetch('https://jsonplaceholder.typicode.com/posts', {
+// 		  method: 'POST',
+// 		  body: JSON.stringify(obj),
+// 		  headers: {
+// 			'Content-type': 'application/json; charset=UTF-8',
+// 		  },
+// 		})
+// 		  .then((response) => response.json())
+// 		  .then((json) => {console.log(json);});
+
+
+// })
+
+// let Name = {
+// 	nitesh :"name",
+// 	id :22,
+// 	age : 22
+// }
+
+// let asy =  async ()=> {
+// 	await fetch('https://jsonplaceholder.typicode.com/posts',{
+// 		method : 'POST',
+// 		body : JSON.stringify(Name),
+
+
+// 	})
+	 
+// }
+// console.log("hello");
+// 	console.log("nhi");
+// 	console.log("kyun");
+// console.log(asy());
