@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body{
+    padding:0px;
+    margin:0px;
+}
+.input{
+    width:100%;
+    height:30vh;
+    background-image:url(./pattern-bg-mobile.png);
+    padding-top:20px;
+    color: white;
+}
+.boxes{
+    width:90%;
+    height:150px;
+    margin-left:100px;
+    margin-bottom:200px;
+    position: absolute;
+    z-index: 1;
+}
+.map{
+    width:100%;
+    height:70vh;
+    background-size: cover;
+    background-image: url(./GoogleMapTA.webp);
+   
+}
+.col-3{
+    width:22.5%;
+    height:150px;
+    background-color: white;
+    float: left;
+    border-right:1px solid grey;
+    border-radius:10px;
+    padding-left:20px;
+}
+    </style>
 </head>
 <body>
     <!-- <p id="txt">here is data load</p>
@@ -16,10 +53,37 @@
        Number <input type="text" placeholder="Number" id="Number">
         <button id="btn" >submit data </button>
      </form> -->
+
+     <div class="input">
+       <center>
+        <h1>IP Adress Tracker</h1>
+        <input type="text" placeholder="Search for any ip address"  style="width:300px;height:30px;" id="input"><button style="height:36px; width:30px; background-color: black;color:white; border-radius:0px 10px 10px 0px;" id="btn">></button>
+    </center>
+     </div>
+     <div class="boxes">
+        <div class="row">
+            <div class="col-3">
+                <h5>IP ADDRESS</h5>
+                <h3 id="IPADD"></h3>
+            </div>
+            <div class="col-3">
+                <h5>LOCATION</h5>
+                <h3 id="LOCATION"></h3>
+            </div>
+            <div class="col-3">
+                <h5>TIMEZONE</h5>
+                <h3 id="Timezone"></h3>
+            </div>
+            <div class="col-3">
+                <h5 >ISP</h5>
+                <h3 id="ISP"></h3>
+            </div>
+        </div>
+     </div>
+     <div class="map"></div>
      
 
     <script src="./revise.js" >
-        console.log(response.id);
     </script>
 </body>
 </html>
