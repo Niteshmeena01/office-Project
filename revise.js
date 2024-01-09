@@ -138,3 +138,82 @@
 // 	console.log("nhi");
 // 	console.log("kyun");
 // console.log(asy());
+
+// let ary = [1,2,3,4,5,67,543,6,23,]
+// let newAry = ary.filter((value)=>{
+//          return value > 6 
+// })
+// console.log(ary , newAry);
+// let ary = [1,2,3,4,5,67,543,6,23,]
+// let newAry = ary.map((value)=>{
+//       return value *12
+// })
+// console.log(newAry);
+ 
+// let a = "hello"
+// let b = "ok"
+// let c = "nope"
+// let d = "fine"
+
+// let ary = async ()=>{
+//          return  await a , b 
+// }
+// ary().then((value)=>{
+//     console.log(value);
+// })
+
+
+// let a = "hello world"
+// let b = a.split(' ').reverse().join(' ')
+
+// console.log(b);
+
+// let a = [10,20,30]
+
+// for(let i in a){
+//         console.log(a[i]);
+
+
+
+
+
+
+
+
+
+
+// let a = 
+// console.log(a.reverse());
+
+
+// fetch(`https://ipgeolocation.abstractapi.com/v1/?api_key=dbf32910c5514e3a93068f6988e373a7&ip_address=${fakeidAddress}`,{
+//     method : 'GET',
+
+// }).then((data)=>{
+// console.log(data);
+// }).catch((error)=>{
+//     console.log(error)
+// })
+ 
+document.getElementById('btn').addEventListener('click', async () => {
+  let input = document.getElementById('input').value; 
+  let fakeIPAddress = "";
+
+  if (input !== "") {
+      try {
+        fakeIPAddress = input;
+          const response = await fetch(`https://ipgeolocation.abstractapi.com/v1/?api_key=dbf32910c5514e3a93068f6988e373a7&ip_address=${fakeIPAddress}`);
+          const data = await response.json();
+
+          document.getElementById('IPADD').innerHTML = data.ip_address;
+          document.getElementById('LOCATION').innerHTML = data.city;
+          document.getElementById('Timezone').innerHTML = data.timezone.current_time;
+          document.getElementById('ISP').innerHTML = data.region_geoname_id;
+          
+      } catch (error) {
+          console.error("Error fetching data:", error);
+      }
+  }
+});
+
+
